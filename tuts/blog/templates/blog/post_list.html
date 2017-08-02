@@ -1,6 +1,7 @@
 <html>
 
     <head>
+
         <title>my blog</title>
 
     </head>
@@ -22,4 +23,33 @@
         </ul>
     </div>
 
+    <div>
+        <h1>Posts listed here</h1>
+        <p>
+            {{posts}}
+        </p>
+
+        <p>
+            {% for post in posts %}
+                {{ post }}
+            {% endfor %}
+        </p>
+
+    </div>
+
+    <div>
+      
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+
+    </div>
 </html>
