@@ -25,7 +25,7 @@ SECRET_KEY = 'vpia+scio50c$pu$va3^9rrv(03o23%mek(0!!ob&+o(#8=e(9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mantarfish.pythonanywhere.com']
 
 
 # Application definition
