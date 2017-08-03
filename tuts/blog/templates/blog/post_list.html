@@ -1,61 +1,26 @@
 {% load staticfiles %}
 
+
 <html>
 
     <head>
-
-        <title>my blog</title>
+        <title>django girl blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-
     </head>
 
-    <h1>this is a heading</h1>
-    <h2>sub</h2>
-    <h3>subsub</h3>
-    <p>this is p1</p>
-    <h2>another heading</h2>
-    <p>this <em>is</em> p2</p>
-    <p><strong>what's up</strong>normal text</p>
-
-    <div>
-        <h1>how to make a list of items</h1>
-
-        <ul>
-            <li>first item</li>
-            <li>second item</li>
-        </ul>
-    </div>
-
-    <div>
-        <h1>Posts listed here</h1>
-        <p>
-            {{posts}}
-        </p>
-
-        <p>
-            {% for post in posts %}
-                {{ post }}
-            {% endfor %}
-        </p>
-
-    </div>
-
-    <div>
-
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+    <body>
+        <h1>Django Girls Blog</h1>
 
         {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
-                <p>auther: {{ post.auther.username }} {{post.auther.password}}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
+            <div class="post">published on {{post.published_date}}
+                <h2 class="title" href=''>{{post.title}}</h2>
+                <div class='content'>
+                    <p>{{post.text|linebreaksbr}}</p>
+                </div>
             </div>
         {% endfor %}
+    </body>
 
-    </div>
 </html>
