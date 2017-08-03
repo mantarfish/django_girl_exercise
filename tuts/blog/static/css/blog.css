@@ -1,26 +1,33 @@
-h1{
+h1 {
     color: #EEEEEF;
     background-color: #AAAAAA;
-    padding: 20px 2px 20px 40px;
+    padding: 45px 2px 30px 40px;
     margin: 0px;
+}
+
+.he {
+    color: inherit ;
 }
 
 
 .content {
-    margin-left: 10px;
+    margin-left: 0px;
     border: 2 px #DDDDDD;
+    border-color: #000000
     background-color: #EEEEEE;
     width: 90%;
     position: relative;
     display: inine-block;
     hight: auto;
     padding: 12px;
-    box-shadow: 2px 3px 3px 3px #FFFFFF inset;
+    box-shadow: 2px 3px 5px 3px #999999;
     border-radius: 5px;
+    resize: both;
+    overflow: auto;
 }
 
 .content:hover {
-    box-shadow: 2px 3px 5px 3px #999999;
+    box-shadow: 2px 3px 10px 3px #999999;
 }
 
 .post {
