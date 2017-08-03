@@ -1,13 +1,11 @@
 h1{
-    color: #EEEEee
+    color: #EEEEEF;
+    background-color: #AAAAAA;
+    padding: 20px 2px 20px 40px;
+    margin: 0px;
+
 }
 
-h1 {
-    background-color: #606060;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-    font-family: 'Lobster';
-}
 
 .content {
     margin-left: 10px;
@@ -29,14 +27,14 @@ h1 {
 }
 
 .post {
-    border-top: 3px;
-    border-color: #AAAAAA;
-    border-style: dashed;
+    border-top: 2px;
+    border-top-color: #AAAAAA;
+    border-top-style: dashed;
     box-sizing: border-box;
     width: auto;
-    max-width: 930px;
+    max-width: 630px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 20px;
@@ -49,7 +47,12 @@ p + h2 {
     margin-top: 1px
 }
 
+
+h1 + .post {
+    border-top: 0px;
+    border-top-color = #ffffff;
+}
+
 .date{
     margin-bottom: 0;
-
 }
