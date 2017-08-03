@@ -1,4 +1,55 @@
 h1{
-    color: #0050AF
+    color: #EEEEee
+}
+
+h1 {
+    background-color: #606060;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+    font-family: 'Lobster';
+}
+
+.content {
+    margin-left: 10px;
+    border: 2 px #DDDDDD;
+    background-color: #EEEEEE;
+    width: 90%;
+    position: relative;
+    display: inine-block;
+    hight: auto;
+    padding: 12px;
+    box-shadow: 2px 3px 3px 3px #FFFFFF inset;
+    border-radius: 5px;
+}
+
+.content:hover {
+    box-shadow: 2px 3px 5px 3px #999999;
+
+
+}
+
+.post {
+    border-top: 3px;
+    border-color: #AAAAAA;
+    border-style: dashed;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 930px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+p + h2 {
+    color: #aaaaaa;
+    margin-top: 1px
+}
+
+.date{
+    margin-bottom: 0;
 
 }

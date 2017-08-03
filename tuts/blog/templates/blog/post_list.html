@@ -14,7 +14,8 @@
         <h1>Django Girls Blog</h1>
 
         {% for post in posts %}
-            <div class="post">published on {{post.published_date}}
+            <div class="post">
+                <p>published on {{post.published_date}}</p>
                 <h2 class="title" href=''>{{post.title}}</h2>
                 <div class='content'>
                     <p>{{post.text|linebreaksbr}}</p>
