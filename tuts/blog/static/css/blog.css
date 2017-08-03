@@ -3,7 +3,6 @@ h1{
     background-color: #AAAAAA;
     padding: 20px 2px 20px 40px;
     margin: 0px;
-
 }
 
 
@@ -22,12 +21,10 @@ h1{
 
 .content:hover {
     box-shadow: 2px 3px 5px 3px #999999;
-
-
 }
 
 .post {
-    border-top: 2px;
+    border-top: 1px;
     border-top-color: #AAAAAA;
     border-top-style: dashed;
     box-sizing: border-box;
