@@ -6,7 +6,8 @@ h1 {
 }
 
 .he {
-    color: inherit ;
+    color: inherit;
+    font-size: 45px;
 }
 
 
@@ -59,4 +60,5 @@ h1 + .post {
 
 .date{
     margin-bottom: 0;
+    float: right;
 }
